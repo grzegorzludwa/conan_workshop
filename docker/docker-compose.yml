@@ -1,0 +1,18 @@
+version: "3.9"
+
+services:
+  dev:
+    container_name: dev
+    image: python:3.8
+    working_dir: /code
+    command: bash
+    stdin_open: true
+    tty: true
+    volumes:
+      - ./code:/code
+  artifactory:
+    container_name: artifactory
+    image: releases-docker.jfrog.io/jfrog/artifactory-cpp-ce:latest
+    ports:
+      - 8081:8081
+      - 8082:8082
