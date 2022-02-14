@@ -9,7 +9,7 @@ services:
     stdin_open: true
     tty: true
     volumes:
-      - ./code:/code
+      - ./src:/code
   artifactory:
     container_name: artifactory
     image: releases-docker.jfrog.io/jfrog/artifactory-cpp-ce:latest
