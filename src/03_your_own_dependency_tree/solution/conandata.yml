@@ -1,0 +1,5 @@
+build_requirements:
+  cmake: "cmake/3.22.0"
+
+requirements:
+  hello_lib: "hello_lib/0.1"

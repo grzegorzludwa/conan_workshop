@@ -1,0 +1,35 @@
+[settings]
+    arch=x86_64
+    build_type=Release
+    compiler=gcc
+    compiler.libcxx=libstdc++
+    compiler.version=10
+    os=Linux
+
+[requires]
+    greeter/0.1
+
+[options]
+
+
+[full_settings]
+    arch=x86_64
+    build_type=Release
+    compiler=gcc
+    compiler.libcxx=libstdc++
+    compiler.version=10
+    os=Linux
+
+[full_requires]
+    greeter/0.1:f4f0f1ee404e1525e1fdf2497a7d748676217898
+    hello_lib/0.1:82ef5eac51c38971dea2fd342dd55ddf2ddfbbc3
+
+[full_options]
+    hello_lib:fPIC=True
+    hello_lib:shared=False
+
+[recipe_hash]
+
+
+[env]
+

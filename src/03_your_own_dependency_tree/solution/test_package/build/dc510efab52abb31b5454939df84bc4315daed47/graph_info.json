@@ -1,0 +1,18 @@
+{
+ "options": [
+  [
+   "hello_lib:fPIC",
+   "True"
+  ],
+  [
+   "hello_lib:shared",
+   "False"
+  ]
+ ],
+ "root": {
+  "name": null,
+  "version": null,
+  "user": null,
+  "channel": null
+ }
+}
