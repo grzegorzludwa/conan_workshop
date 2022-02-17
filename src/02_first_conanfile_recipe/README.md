@@ -16,7 +16,7 @@ in current working directory. Check how they are different than the others.
 
 ### Prepare sources for lib package
 
-1. Remove all not needed packages from previous step.
+1. Remove all not needed packages and files from previous step.
 2. Create folder and move there `mkdir hello_lib; cd hello_lib`.
 3. Create conan package with sources and tests `conan new hello_lib -s -t`.
 4. With `conan inspect .` you can check what attributes are already set and/or
@@ -83,13 +83,15 @@ Package will be built, packaged and tested.
 1. Because we already configured container and have package built it is as simple
 as calling:
 
-```script
-conan upload <PACKAGE_REFERENCE> -r <REMOTE_NAME> --all
-e.g.
-conan upload hello_lib/0.1 -r conan-workshop --all
-```
+    ```script
+    conan upload <PACKAGE_REFERENCE> -r <REMOTE_NAME> --all
+    e.g.
+    conan upload hello_lib/0.1 -r conan-workshop --all
+    ```
 
-If we will skip the `--all` option then only `conanfile.py` and exported files
-will be uploaded to artifactory (without actually packaged files and binaries).
-To see more info about `conan upload` check
-[conan upload](https://docs.conan.io/en/latest/reference/commands/creator/upload.html).
+    If we will skip the `--all` option then only `conanfile.py` and exported files
+    will be uploaded to artifactory (without actually packaged files and binaries).
+    To see more info about `conan upload` check
+    [conan upload](https://docs.conan.io/en/latest/reference/commands/creator/upload.html).
+
+2. Open Artifactory page and check, that the `hello_lib` package can be found.
