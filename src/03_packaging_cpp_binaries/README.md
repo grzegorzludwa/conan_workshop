@@ -1,4 +1,4 @@
-# 03_your_own_dependency_tree
+# 03_packaging_cpp_binaries
 
 In this chapter we will create new package `greeter` which will use the
 `hello_lib` from previous chapter.

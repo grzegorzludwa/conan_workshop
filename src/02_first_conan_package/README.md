@@ -1,4 +1,4 @@
-# 02_first_conanfile_recipe
+# 02_first_conan_package
 
 In this chapter we will create our first conan package.
 
