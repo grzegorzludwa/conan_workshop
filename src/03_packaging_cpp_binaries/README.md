@@ -1,10 +1,12 @@
 # 03_packaging_cpp_binaries
 
-In this chapter we will create new package `greeter` which will use the
+In this chapter we will create new package `greeter` which depends on
 `hello_lib` from previous chapter.
 
-We will create a simple executable which depends on `hello_lib` and uses
-`hello_lib()` function to print greetings.
+You can find 2 folders:
+1. `greeter` - template to work on.
+2. `solution` - fully working package. Can be used as reference in case of
+problems.
 
 ## Check template package
 
@@ -138,7 +140,7 @@ correctly - check if we can include and use the library/binary. So it
 usually create a small test package which only include and run basic functions,
 or even only run binary, depending on type of package.
 
-Below you can find a snippet how binary can be run and the output checked.
+1. Below you can find a snippet how binary can be run and the output checked.
 
     ```
     output = StringIO()
@@ -156,3 +158,16 @@ Below you can find a snippet how binary can be run and the output checked.
             "Test package FAILED."
         )
     ```
+
+2. Create package again and check if test is passing.
+
+    ``` script
+    conan create .
+    ...
+    greeter/0.1 (test package): Running test()
+    greeter/0.1 (test package): Test OK
+    ```
+
+3. Check how dependency tree looks right now. We will generate dependency
+graph `conan info . --graph deps.html` and open it in browser.
+
