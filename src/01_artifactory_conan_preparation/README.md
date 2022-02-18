@@ -25,7 +25,6 @@ And hit "Create Local Repository"
 
 Right now we have to prepare the dev container.
 
-
 1. Attach new shell to docker `dev` container: `docker exec -it dev bash`.
 2. Install conan. Simply `pip install conan`.
 3. Add previously created remote conan remote. By default artifactory container
@@ -61,5 +60,3 @@ default) in the "Type Password" field.
 
 Right now we can see almost ready commands.
 ![set_me_up](img/set_me_up.png)
-
-### Set up conan in container
