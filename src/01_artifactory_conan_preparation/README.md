@@ -15,7 +15,7 @@ docker logs -f artifactory
 
 1. Open in local browser: [http://localhost:8082](http://localhost:8082)
 2. Login: `admin`, password: `password`. For learning purposes we don't need
-to change them.
+to change them, but sometimes artifactory forces the change.
 3. In the left menu go to "Repositories" -> "Repositories".
 4. In the right upper corner select "Add Repositories" -> "Local Repository".
 5. Select "Conan" repository type. Put some "Repository key", e.g. `conan-workshop`.

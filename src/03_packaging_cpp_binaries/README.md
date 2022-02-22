@@ -55,11 +55,11 @@ More info about generators: [Generators](https://docs.conan.io/en/latest/referen
 
 ## Fix package
 
-1. Try to build package:
+1. Try to create package. We skip test stage for now, because it is not ready
+yet.
 
     ``` script
-    conan install . -if build
-    conan build . -bf build
+    conan create . --test-folder=None
     ```
 
     It will probably fail at this stage. Try to fix it.
@@ -143,6 +143,10 @@ or even only run binary, depending on type of package.
 1. Below you can find a snippet how binary can be run and the output checked.
 
     ```
+    from io import StringIO
+
+    ...
+
     output = StringIO()
     self.run(
         "bin/greeter",

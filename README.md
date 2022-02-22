@@ -17,6 +17,11 @@ Conan workshop materials.
 Before we will start the workshop session please follow the steps from
 [00_before_start](src/00_before_start/README.md).
 
+## References
+
+1. https://academy.jfrog.com/path/conan
+2. https://docs.conan.io/en/latest/
+
 ## Contact
 
 grzegorz.ludwa@wp.pl
